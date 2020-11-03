@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<header class="header">
+
+  <nav class="navbar navbar-inverse " >
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">HAYATT HOTEL</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#" data-toggle="tooltip" data-placement="bottom" title="Home">Home</a></li>
+        <li data-toggle="modal" data-target="#myModal"><a href="#" data-toggle="tooltip" data-placement="bottom" title="About!">About</a></li>
+
+
+        <div class="modal fade" id="myModal" role="dialog">
+          <div class="modal-dialog">
+          
+            
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Everything about Hayatt</h4>
+              </div>
+              <div class="modal-body">
+                <p>
+                  Hyatt is one of the world’s best hospitality brands. 
+                  The company was founded by Jay Pritzker in 1957 when he purchased the Hyatt House
+                  motel adjacent to the Los Angeles International Airport. Over the following decades, 
+                  Jay Pritzker and his brother, Donald Pritzker, grew the company into the industry-leading 
+                  management and hotel ownership company as it is known today. Hyatt manages more than 500 hotels 
+                  and resorts across 12 distinctive brands, each designed to deliver experiences attuned to the lifestyles,
+                  attitudes, values, and aspirations of the guests for whom it is designed: Park Hyatt, Andaz, Grand Hyatt, 
+                  Hyatt Hotels, Hyatt Regency, Hyatt Place, Hyatt House, Hyatt Zilara & Ziva, Hyatt Residence club, Hyatt Centric, 
+                  and the Unbound Collection by Hyatt.<br><br>
+
+                  Park Hyatt and Andaz are considered the group’s luxury brands and rank among my favorite 
+                  hotel brands in the world. Located in major gateway cities and prime leisure travel destinations 
+                  worldwide, Hyatt’s top hotels are a symbol of luxury, offering impeccable service, world-class spas 
+                  and state-of-the-art guest rooms, all perfectly tailored to those who expect nothing but the best. 
+                  Each one is designed to reflect the unique character of its locale – the chic of Paris, 
+                  the exotic allure of Hawaii or the all-American style of Chicago. Park Hyatt hotels are especially 
+                  known for their acclaimed art programs, sleek and minimalist interior design, and exceptional 
+                  dining venues under the direction of celebrated chefs. Andaz properties are upscale 
+                  lifestyle boutique-style hotels catering to a younger public.
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        
+      
+
+      
+          <li class="dropdown" style="list-style: none;">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Hotels <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="2nd page.html">Hotel Reviews</a></li>
+                  <li><a href="2nd page.html">Book a hotel</a></li>
+                  <li><a href="2nd page.html">Best rate guarantee</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">loyalty programs</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Luxury brands</a></li>
+                </ul>
+          </li>
+          
+
+
+
+        <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="2 New notification">Notification <span class="badge">2</span></a></li>
+        
+        
+
+
+
+
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+      <button class="btn btn-default navbar-btn" type="button" data-toggle="modal" data-target="#exampleModal"><span class="glyphicon glyphicon-user"></span> Sign Up</button>
+      
+      
+      
+        
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+               <div class="modal-content">
+                  <div class="modal-header">
+                     <h3 class="modal-title" id="exampleModalLabel"><b>Register Yourself</b></h3>
+                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                             <span aria-hidden="true"> &times;</span>
+                         </button>
+                  </div>
+                  <div class="modal-body">
+                  <form>
+                  <div class="form-group">
+                     <label for="">Name</label>
+                         <input type="text" class="form-control" aria-describedby="name" placeholder="Enter name">
+                  </div>
+                  <div class="form-group">
+                     <label for="">Email</label>
+                         <input type="text" class="form-control" aria-describedby="name" placeholder="Enter Email">
+                  </div>
+                  <div class="form-group">
+                     <label for="">Phone number <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="top" data-title="10 digit only" data-content="0123456789">*</button> </label>
+                         <input type="text" class="form-control" aria-describedby="name" placeholder="Enter number">
+                  </div>
+
+                  <div class="form-group">
+                    <label for="">Password</label>
+                        <input type="text" class="form-control" aria-describedby="name" placeholder="Password">
+                 </div>
+
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="submit" class="btn btn-danger">Cancel</button>
+                  </form>
+                  </div>
+              </div>
+            </div>
+          </div>
+       
+        <script>
+        $(document).ready(function(){
+        $('[data-toggle="popover"]').popover();
+        });
+        </script>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <li><a href="#shyamal"><span  class="glyphicon glyphicon-log-in"></span> Login</a></li>
+</ul> 
+      
+      <form class="navbar-form navbar-right" action="/action_page.php">
+        
+        <div class="input-group">
+          
+          <input type="text" id="Harsh" class="form-control" placeholder="Search" name="search">
+          <div class="input-group-btn">
+            <button class="btn btn-default" type="submit">
+              
+              <i class="glyphicon glyphicon-search"></i>
+            </button>
+            
+          </div>
+        </div>
+      </form>
+    </div>
+  </nav>
+
+
+
+
+
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6 banner-info">
+        <h1>Welcome to</h1>
+        <p class="big-text">Grand Luxurious Hotel</p>
+        <p class="text-warning">STAY YOUR WAY AT HYATT!!</p> <br>
+
+   
+                   
+                        <a class="btn btn-first" href="#Harsh">Find Hotels</a>
+                        <a class="btn btn-second" href="2nd page.html">Check Rates</a>
+                   
+    </div>
+        
+
+        <div  class="col-sm-6 banner-image">
+           <img src="hotel1.jpg" class="img-responsive">  
+        </div>
+        <div class="text-active ">
+          <p>safety first, wellbeing always & ideal hotel at the ideal price</p>
+        </div>
+
+        
+
+
+
+        <div class="container">
+           
+          <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+              <li data-target="#myCarousel" data-slide-to="3"></li>
+            </ol>
+        
+           
+            <div class="carousel-inner">
+              <div class="item active">
+                <img src="hotel6.jpg" alt="Los Angeles" style="width:100%;" class="img-responsive">
+              </div>
+        
+              <div class="item">
+                <img src="hotel4.jpg" alt="Chicago" style="width:100%;" class="img-responsive">
+              </div>
+            
+              <div class="item">
+                <img src="hotel2.jpg" alt="New york" style="width:100%;" class="img-responsive">
+              </div>
+
+              <div class="item">
+                <img src="hotel5.jpg" alt="New york" style="width:100%;" class="img-responsive">
+              </div>
+            </div>
+        
+            
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div><br><br>
+
+
+
+
+
+
+
+
+       
+
+        <div class="form-group  ">
+          
+          <label for="comment">Comment:</label>
+          <textarea class="form-control" rows="2" cols="2" id="comment"></textarea><br>
+          <button type="button-right" class="btn btn-info">submit</button>
+        </div> 
+       
+        </div>
+
+        <div class=" container-fluid alert alert-info">
+          <strong>Info!</strong> <b>Plan your holiday trip and grab 80% off on your first visit! Condition apply </b>
+        </div>
+
+
+ <div id="shyamal" class=" modal-header col-md-4 col-md-offset-4">
+            
+  <h1>Login</h1>
+  <div class="form-group">
+       <label for="usr">UserName:</label>
+       <input type="text" class="form-control" id="user">
+  </div>
+
+  <div class="form-group">
+       <label for="pwd">Password:</label>
+       <input type="password" class="form-control" id="pwd">
+  </div> 
+ 
+  
+  <div>
+    <a href="">Forgot password?</a><br>
+    <button class="btn btn-info btn-block my-3" type="submit">Sign in</button>
+    <br>
+    <p>Not a member?<a href="#">   Register  </a> </p>
+  </div>
+  
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+<script>
+  $(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();   
+  });
+  </script>
+
+    
+
+</header>
+
+</body>
+</html>
